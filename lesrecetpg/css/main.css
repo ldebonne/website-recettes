@@ -1,0 +1,402 @@
+/* Header */
+
+header{
+	width: 100%; 
+
+    background: url('../images/traitgris2.png') repeat-x bottom;
+
+    display: flex;
+    flex-wrap: nowrap; /* Tout est sur la même ligne */
+}
+
+nav div{
+	flex:50%;
+}
+
+#logo{
+	margin-left: 3%;
+	float: left;
+	width: 36.5%;
+}
+
+#logo img{
+	width: 110px;
+	height: 50px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    width:260px;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    text-decoration: none;
+}
+
+#navheaderconnexion{
+	margin-left: 30%;
+	width: 55px;
+	height: 55px;	
+}
+
+#navheaderconnexion img{
+	width: 38px;
+	height: 38px;
+	margin: 15%;
+
+}
+
+nav ul a:hover /* Ce qui se passe quand on passe la souris sur le texte : Pour les catégories */
+{
+    border-bottom: 3px solid #f8e4ef;
+    padding-bottom: 15px;
+}
+
+#navheaderconnexion:hover /* Ce qui se passe quand on passe la souris sur le bouton de connexion */
+{
+    background-color: #f9eaee;
+}
+
+/* Corps du texte */
+
+/* Barre de recherche */
+#searchbar{
+	flex:60%; /* Lui permet d'être seul en haut */
+
+	text-align: center; /* Centre le tout */
+
+	display: flex; /* Mets tout sur la même ligne */
+
+	margin-top: 1%;
+}
+
+#searchtext{
+	margin-left: 390px;
+    width:230px;
+    float:center;    
+}
+
+#searchrecette{
+	width: 450px;
+	height: 20px;
+	float:left;
+	background-color: #f9eaee;
+	margin-left: 7px;
+	border-radius: 10px;
+}
+
+#searchrecette .text{
+	width: 380px;
+	border: none;
+	background-color: transparent;
+	outline:none;
+}
+
+i{
+	border: solid black;
+ 	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 1.5px;
+  margin-right:3px;
+}
+
+.down:hover{
+	cursor: pointer; 
+}
+
+#searchrecette .button{
+	border: none;
+	outline:none;
+	background-color: transparent;
+}
+
+#searchrecette .button:hover{
+	cursor: pointer; 
+}
+
+#searchbar a{
+	margin-left: 3px;
+	color: #181818;
+    text-decoration: none;
+}
+/* Gestion des articles */
+
+section {
+ 	display: flex;
+ 	position: relative;
+	top: 10%;
+	width: 100%; 
+	height: auto;
+	flex-wrap: wrap;
+}
+
+article{
+	padding: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	flex: 25%; /* 3 articles par ligne */
+	border:2px solid #f9eaee;
+	text-align: justify;
+}	
+
+.saison_ingredients ul{
+	list-style-type: none;
+    display: flex;
+    width:auto;
+}
+.saison_ingredients li{
+	margin:auto;
+	border-radius: 10px;
+}
+
+.categorie_recette ul{
+	list-style-type: none;
+    display: flex;
+    width:auto;
+}
+.categorie_recette li{
+	margin:auto;
+	background-color: #f9eaee;
+	border-radius: 10px;
+}
+ 
+
+/* Mise en page du formulaire de l'ajout des recettes */
+
+#recetteform {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: auto;
+  width: 500px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border:5px solid #f9eaee;
+  border-radius: 1em;
+}
+
+#recetteform div + div {
+  margin-top: 1em;
+}
+
+#ingredient{
+    display: inline-block;
+    width: 148px;
+    text-align: left;
+}
+#quantity{
+    display: inline-block;
+    width: 45px;
+    text-align: left;
+}
+#unit{
+    display: inline-block;
+    width: 55px;
+    text-align: left;
+}
+#saison{
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+#time_unit{
+    display: inline-block;
+    width: 123px;
+    text-align: left;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+}
+
+
+.classique, textarea, select {
+  /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+  font: 1em sans-serif;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 350px;
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border: 1px solid #999;
+}
+
+.classique:focus, .categorie:focus textarea:focus, select:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+
+.categorie{
+    font: 1em sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    vertical-align: top;
+}
+
+/* Button plus */
+
+.button_plus{
+    background-image: url(https//:picsum.photos/20/30); /*'../images/plus1.png'*/
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border:none;
+    position: fixed;
+	outline:none;
+}
+
+.button_plus:hover{
+	cursor: pointer; 
+}
+
+/* fin boutton plus */
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+}
+
+#confirmformrecette {
+    /*Position du bouton */
+  padding-left: 115px; 
+
+}
+
+/* Mise en page du formulaire de signin */
+
+#seconnecter{
+	flex:100%;
+	height: 40px;
+}
+
+#seconnecter p{
+	text-align: center;
+	top:0;
+}
+
+#signin{
+	flex: 80%;
+}
+
+#signinform {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 500px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border:5px solid #f9eaee;
+  border-radius: 1em;
+}
+
+#signinform div + div {
+  margin-top: 1em;
+}
+
+/* Tout ce qu'il y a au milieu est identique pour chaque form */ 
+
+#confirmformsignin {
+    /*Position du bouton */
+  padding-left: 115px; 
+
+}
+
+#creationcompte{
+	margin:auto;
+}
+
+#creationcompte a{
+    font-size: 1em;
+    color: #181818;
+    text-decoration: none;
+}
+
+/* Mise en page du formulaire de register */
+
+#registerform {
+  /* Uniquement centrer le formulaire sur la page */
+  margin: 0 auto;
+  width: 500px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border:5px solid #f9eaee;
+  border-radius: 1em;
+}
+
+#registerform div + div {
+  margin-top: 1em;
+}
+
+/* Tout ce qu'il y a au milieu est identique pour chaque form */ 
+
+#confirmformregister {
+    /*Position du bouton */
+  padding-left: 115px; 
+
+}
+
+
+/* footer */
+
+footer{
+	background: url('../images/traitgris2.png') repeat-x top;
+	margin-top: 1%;
+	width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap; /* Tout est sur la même ligne */
+
+    size:small;
+}
+
+#footerconnexion{
+	position: fixed;
+	bottom:0;
+}
+
+footer{
+	margin-top: 30px;
+}
+
+footer div{
+	margin: auto;	
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer li
+{
+    margin-right: 15px;
+}
+
+footer a
+{
+    color: #181818;
+    text-decoration: none;
+}
