@@ -1,6 +1,8 @@
 # website-recettes
 Code for www.lesrecettesmalines.fr
 
+Travail réalisé durant le 1er semestre de 2020, plus précisément durant le confinement (covid19) // Non terminé
+
 Fonctionnement :
 
 A chaque ajout, mise à jour des problèmes rencontrés/solutions trouvées en commentaire de l'ajout.
